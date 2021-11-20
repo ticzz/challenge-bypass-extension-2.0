@@ -1,0 +1,40 @@
+{
+  "name": "PrivacyPass",
+  "version": "2.0.9",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/privacypass/challenge-bypass-extension"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "asn1-parser": "^1.1.8",
+    "atob": "^2.1.2",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-rewire": "^1.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "btoa": "^1.2.1",
+    "puppeteer": "^10.0.0",
+    "regenerator-runtime": "^0.12.1",
+    "rewire": "^4.0.1",
+    "sjcl": "^1.0.8",
+    "stringify": "^5.2.0"
+  },
+  "scripts": {
+    "all": "yarn lint && yarn build && yarn test-all",
+    "build": "make build",
+    "test": "make test-ext && jest",
+    "test-all": "make test-all",
+    "dist": "make dist",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.12.0",
+    "jest": "^26.6.3",
+    "jest-each": "^26.6.2"
+  }
+}
